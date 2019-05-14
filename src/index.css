@@ -53,6 +53,15 @@ td {
     min-height: 100vh;
 
 }
+.MuiListItemText-primary-229{
+  color: white;
+}
+h1{
+  color: white;
+}
+.MuiSvgIcon-root-217{
+  color: white;
+}
 td:last-child {
   width: 20%;
   text-align: center;
@@ -64,5 +73,4 @@ td:last-child {
     /*width: 54rem;
     margin: auto;*/
   }
-
 }

@@ -87,7 +87,7 @@ class App extends Component {
 
     render() {
         return (
-            <Router basename='/~ilkkamtk/mpjakk-react'>
+            <Router basename='/~arttuvs/RP3AM'>
                 <MuiThemeProvider theme={theme}>
 
                     <Grid container>

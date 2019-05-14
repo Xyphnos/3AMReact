@@ -16,10 +16,10 @@ const Nav = (props) => {
     return (
         <List>
             <StyledListItem container button component={Link} to="/home">
-                <ListItemIcon>
+                <ListItemIcon color="primary">
                     <Home/>
                 </ListItemIcon>
-                <ListItemText primary="Home"/>
+                <ListItemText disableTypography style={{color: 'white'}} primary="Home"/>
             </StyledListItem>
             {props.checkLogin() &&
             <React.Fragment>
@@ -27,13 +27,13 @@ const Nav = (props) => {
                     <ListItemIcon>
                         <AccountBox/>
                     </ListItemIcon>
-                    <ListItemText primary="Profile"/>
+                    <ListItemText disableTypography style={{color: 'white'}} primary="Profile"/>
                 </StyledListItem>
                 <StyledListItem button component={Link} to="/upload">
                     <ListItemIcon>
                         <AddCircle/>
                     </ListItemIcon>
-                    <ListItemText primary="Upload"/>
+                    <ListItemText disableTypography style={{color: 'white'}} primary="Upload"/>
                 </StyledListItem>
 
             </React.Fragment>

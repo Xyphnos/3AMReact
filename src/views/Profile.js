@@ -62,7 +62,7 @@ const Profile = (props) => {
           <Grid>
             <h1>Profile</h1>
             <Card className={classes.card} label={'card'}>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography style={{color: 'white'}} gutterBottom variant="h5" component="h2">
                 {username}
               </Typography>
               <CardActionArea>
@@ -76,13 +76,13 @@ const Profile = (props) => {
                   <ListItemIcon>
                     <Folder/>
                   </ListItemIcon>
-                  <ListItemText primary="My Files"/>
+                  <ListItemText disableTypography style={{color: 'white'}} primary="My Files"/>
                 </StyledListItem>
                 <StyledListItem button component={Link} to="/commission">
                   <ListItemIcon>
                     <Assignment/>
                   </ListItemIcon>
-                  <ListItemText primary="Commission"/>
+                  <ListItemText disableTypography style={{color: 'white'}} primary="Commission"/>
                 </StyledListItem>
               </List>
             </Card>

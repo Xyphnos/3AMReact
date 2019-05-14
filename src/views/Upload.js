@@ -6,6 +6,16 @@ import TextField from '@material-ui/core/es/TextField/TextField';
 import './css/Upload.css';
 import ImageEditor from '../components/ImageEditor';
 import {upload} from '../util/MediaAPI';
+import {withStyles} from '@material-ui/core/styles';
+import red from "@material-ui/core/colors/red";
+
+const styles = theme => ({
+  button: {
+    marginTop: 10,
+    backgroundColor: '#7e57c2',
+    color: 'white',
+  },
+});
 
 class Upload extends Component {
   mediaUrl = 'http://media.mw.metropolia.fi/wbma/';
@@ -96,6 +106,7 @@ class Upload extends Component {
   };
 
   render() {
+    const {classes} = this.props;
     return (
         <React.Fragment>
           <h1>Upload</h1>
@@ -125,8 +136,8 @@ class Upload extends Component {
                        type="file"
                        onChange={this.handleFileChange}
                        fullWidth/>
-            <Button style={{marginTop:10}} type="submit" variant="contained"
-                    color="primary">Upload&nbsp;&nbsp;{this.state.loading &&
+            <Button className={classes.button} type="submit" variant="contained"
+                    >Upload&nbsp;&nbsp;{this.state.loading &&
             <CircularProgress size={20} color="secondary"/>}</Button>
           </ValidatorForm>
           {this.state.imageData !== null && this.state.type.includes('image') &&
@@ -142,4 +153,4 @@ Upload.propTypes = {
   updateImages: PropTypes.func,
 };
 
-export default Upload;
+export default withStyles(styles)(Upload);
