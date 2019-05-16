@@ -1,6 +1,6 @@
 ## Link to the project
 
-http://users.metropolia.fi/~arttuvs/RP3AM/build/
+http://users.metropolia.fi/~arttuvs/RP3AM/
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
